@@ -1,0 +1,9 @@
+FactoryBot.define do
+  factory :user do
+    first_name { "John" }
+    last_name { "Doe" }
+    email {"johndoe@email.com"}
+    password {"password"}
+    government_id {"blahphoto.png"}
+  end
+end

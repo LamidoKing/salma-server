@@ -1,0 +1,25 @@
+language: ruby
+cache:
+  - bundler
+  - yarn
+services:
+  - sqlite3
+before_install:
+  - nvm install --lts
+before_script:
+  - bundle install --jobs=3 --retry=3
+  - bundle exec rake db:create
+  - bundle exec rake db:schema:load RAILS_ENV=test
+  - bundle exec rake db:migrate RAILS_ENV=test
+  - bundle exec rake db:seed RAILS_ENV=test
+script:
+  - bundle exec rake spec
+deploy:
+  provider: heroku
+  api_key: ${HEROKU_API_KEY}
+  app: kunsal-helpers
+  on:
+    repo: kunsal/helpers
+  run:
+    - "bundle exec rake db:migrate RAILS_ENV=production"
+    # - "bundle exec rake db:seed RAILS_ENV=production"

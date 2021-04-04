@@ -1,0 +1,4 @@
+LOG:  unrecognized configuration parameter "dynamic_shared_memory_type" in file "/usr/local/var/postgres/postgresql.conf" line 130
+LOG:  unrecognized configuration parameter "max_wal_size" in file "/usr/local/var/postgres/postgresql.conf" line 213
+LOG:  unrecognized configuration parameter "min_wal_size" in file "/usr/local/var/postgres/postgresql.conf" line 214
+FATAL:  configuration file "/usr/local/var/postgres/postgresql.conf" contains errors
