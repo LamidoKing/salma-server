@@ -21,19 +21,31 @@ class Api::V1::HelpsController < AuthBaseController
   end
 
   def destroy
-    @help = logged_in_user.helps.find(params[:id])
+    @help = Help.find(params[:id])
+    if @help.user_id==logged_in_user.id
     @help.destroy
-    head :no_content
+    render json: {message: "Successfuly deleted"}, status: 200
+
+    else
+      render json: {message: "You need to be that specific user to delete it"}, status: 404
+
+
+
+
+    end
 
   end
 
   def update
-    @help = logged_in_user.helps.find(params[:id])
+    @help = Help.find(params[:id])
 
-    if @help.update(help_params)
-      render json: @help
+    if @help.user_id==logged_in_user.id
+      @help.update(help_params)
+      render json: {message: "Successfuly updated"}, status: 200
     else
-      render nothing: true, status: :unprocessable_entity
+      render json: {message: "You need to be that specific user to update it"}, status: 404
+
+    
     end
   end
 
