@@ -21,6 +21,8 @@ Rails.application.configure do
   # Disable serving static files from the `/public` folder by default since
   # Apache or NGINX already handles this.
   config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present?
+  config.action_cable.url = 'wss://fast-ridge-64559.herokuapp.com/cable'
+  config.action_cable.allowed_request_origins = [%r{http:\/\/*/}, %r{https:\/\/*/}]
 
   # Compress CSS using a preprocessor.
   # config.assets.css_compressor = :sass

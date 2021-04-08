@@ -24,3 +24,8 @@ test:
 production:
   <<: *default
   adapter: postgresql
+  encoding: unicode
+  url: postgres://qvsmhegpnvscsu:597d3bceb3607a477328a5a1ba20ffe4ab72038c219da56339c3a6a2c3d3d2f8@ec2-54-145-102-149.compute-1.amazonaws.com:5432/d614qkjnthf4ev
+
+
+# pass: uWlsKkyncKW2X6Lpf9W3CxXTxXi4bBSI
