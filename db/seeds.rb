@@ -8,10 +8,10 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 # Category.delete_all
-if Rails.env == 'test'
+'
   Category.destroy_all
-  category = Category.create([{name: 'One Time Need', color: 'blue'}, {name: 'Material Need', color: 'green'}])
-end
+  category = Category.create([{name: 'One Time Need', color: 'green'}, {name: 'Material Need', color: 'orange'}])
+
 
 # if Rails.env == 'production'
 #   help = Help.find(1)
