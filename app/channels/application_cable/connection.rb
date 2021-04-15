@@ -11,7 +11,7 @@ module ApplicationCable
     private
       def find_verified_user
         begin
-          token = request.query_parameters['token']
+          token = request.params[:token]
           decoded_token = TokenHelper.decode token
           if (current_user = User.find(decoded_token[0]['user_id']))
             current_user
