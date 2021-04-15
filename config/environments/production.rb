@@ -112,7 +112,8 @@ Rails.application.configure do
   # config.active_record.database_resolver = ActiveRecord::Middleware::DatabaseSelector::Resolver
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
 
-  config.action_cable.url = [/ws:\/\/*/, /wss:\/\/*/]
-  config.action_cable.allowed_request_origins = [/http:\/\/*/, /https:\/\/*/]
-  config.action_cable.allowed_request_origins = ['https://fast-ridge-64559.herokuapp.com', 'http://fast-ridge-64559.herokuapp.com.com']
+  config.action_cable.url = "wss://fast-ridge-64559.herokuapp.com/cable"
+  # config.action_cable.allowed_request_origins = [/http:\/\/*/, /https:\/\/*/]
+  config.action_cable.allowed_request_origins = ['https://fast-ridge-64559.herokuapp.com',
+  "/http:\/\/fast-ridge-64559.herokuapp.com"]
 end
