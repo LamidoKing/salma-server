@@ -19,9 +19,9 @@ describe 'Users' do
     it 'creates user in the database and returns 201' do
       expect {
         post '/api/v1/users', params: {
-          first_name: 'Ola',
-          last_name: 'Kunle',
-          email: 'kunsal@email.com',
+          first_name: 'salma',
+          last_name: 'mohamed',
+          email: 'hj@email.com',
           password: 'abcdef',
           government_id: 'kdkkdkdkdkdkkd'
         }

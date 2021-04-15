@@ -4,8 +4,8 @@ describe 'Categories', type: :request do
   context 'Fetch' do
     before do
       @category = FactoryBot.create :category, {
-        name: 'Material',
-        color: 'red'
+        name: 'Material need',
+        color: 'green'
       }
     end
 

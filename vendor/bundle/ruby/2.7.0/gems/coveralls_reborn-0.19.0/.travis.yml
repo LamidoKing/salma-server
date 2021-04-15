@@ -1,0 +1,26 @@
+os: linux
+dist: bionic
+language: ruby
+
+cache: bundler
+
+env:
+  global:
+    # --dev improves JRuby startup time
+    # --debug reports proper coverage to SimpleCov
+    # See https://github.com/jruby/jruby/wiki/Improving-startup-time
+    - JRUBY_OPTS="--dev --debug"
+
+rvm:
+  - 2.4.10
+  - 2.5.8
+  - 2.6.6
+  - 2.7.2
+  - ruby-head
+  - jruby-9.2.13.0
+
+jobs:
+  allow_failures:
+    - rvm: ruby-head
+    - rvm: jruby-9.2.13.0
+  fast_finish: true

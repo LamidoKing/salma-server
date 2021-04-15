@@ -3,9 +3,9 @@ require 'rails_helper'
 RSpec.describe User, type: :model do
   before(:each) do
     @user_data = {
-      first_name: 'Olakunle',
-      last_name: 'Salami',
-      email: 'kunsal@email.com',
+      first_name: 'salma',
+      last_name: 'mohamed',
+      email: 'hj@email.com',
       password: 'pass123',
       government_id: 'kdkdkdkkddkkddkkd'
     }
