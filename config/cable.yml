@@ -7,7 +7,7 @@ test:
 
 production:
   adapter: redis
-  url: redis-13359.c261.us-east-1-4.ec2.cloud.redislabs.com
+  url: redis-13359.c261.us-east-1-4.ec2.cloud.redislabs.com:13359
   port: 13359
   password: uWlsKkyncKW2X6Lpf9W3CxXTxXi4bBSI
   channel_prefix: fast-ridge-64559
