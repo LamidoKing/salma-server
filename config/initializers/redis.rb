@@ -1,9 +1,9 @@
 require 'redis'
 
-Redis.current= Redis.new (
-    host: redis-13359.c261.us-east-1-4.ec2.cloud.redislabs.com,
+redis= Redis.new (
+    url: "redis-13359.c261.us-east-1-4.ec2.cloud.redislabs.com",
     port: 13359,
-    password: uWlsKkyncKW2X6Lpf9W3CxXTxXi4bBSI
+    password: "uWlsKkyncKW2X6Lpf9W3CxXTxXi4bBSI"
     )
 
 
