@@ -114,5 +114,5 @@ Rails.application.configure do
 
   config.action_cable.url = "wss://sheltered-reaches-03216.herokuapp.com/cable"
   # config.action_cable.allowed_request_origins = [/http:\/\/*/, /https:\/\/*/]
-  config.action_cable.allowed_request_origins = ['https://modest-cray-0182ea.netlify.app/',"/http:\/\/modest-cray-0182ea.netlify.app" ]
+  config.action_cable.allowed_request_origins = ['https://modest-cray-0182ea.netlify.app/',"/http:\/\/modest-cray-0182ea.netlify.app","https://modest-cray-0182ea.netlify.app" ]
 end
