@@ -13,7 +13,7 @@ Rails.application.configure do
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
-  config.action_cable.disable_request_forgery_protection = false
+  # config.action_cable.disable_request_forgery_protection = false
   # Ensures that a master key has been made available in either ENV["RAILS_MASTER_KEY"]
   # or in config/master.key. This key is used to decrypt credentials (and other encrypted files).
   # config.require_master_key = true
@@ -114,5 +114,6 @@ Rails.application.configure do
 
   config.action_cable.url = "wss://sheltered-reaches-03216.herokuapp.com/cable"
   # config.action_cable.allowed_request_origins = [/http:\/\/*/, /https:\/\/*/]
-  config.action_cable.allowed_request_origins = ['https://modest-cray-0182ea.netlify.app/',"/http:\/\/modest-cray-0182ea.netlify.app","https://modest-cray-0182ea.netlify.app" ]
+  config.action_cable.allowed_request_origins = ['https://modest-cray-0182ea.netlify.app/',"/http:\/\/modest-cray-0182ea.netlify.app" ]
+  # "https://modest-cray-0182ea.netlify.app"
 end
