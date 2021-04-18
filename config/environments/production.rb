@@ -117,7 +117,7 @@ Rails.application.configure do
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
 
   config.action_cable.url = "wss://pacific-sands-90929.herokuapp.com/cable"
-  # config.action_cable.allowed_request_origins = [/http:\/\/*/, /https:\/\/*/]
-  config.action_cable.allowed_request_origins = ['https://modest-cray-0182ea.netlify.app/',"/http:\/\/modest-cray-0182ea.netlify.app", 'https://localhost:3000/','http://localhost:3000/',"/http:\/\/localhost:3000/" ]
+  config.action_cable.allowed_request_origins = [/http:\/\/*/, /https:\/\/*/]
+  # config.action_cable.allowed_request_origins = ['https://modest-cray-0182ea.netlify.app/',"/http:\/\/modest-cray-0182ea.netlify.app", 'https://localhost:3000/','http://localhost:3000/',"/http:\/\/localhost:3000/" ]
   # "https://modest-cray-0182ea.netlify.app"
 end
