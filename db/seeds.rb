@@ -7,12 +7,10 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-# Category.delete_all
-# if Rails.env == 'test'
-  # Category.destroy_all
-  # Category.destroy_all
-  # category = Category.create(name: 'One Time Need', color: 'orange')
-  # category2 = Category.create(name: 'Material Need', color: 'green')
+Category.delete_all
+
+category = Category.create(name: 'One Time Need', color: 'orange')
+category2 = Category.create(name: 'Material Need', color: 'green')
 
 
 # if Rails.env == 'production'
